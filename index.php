@@ -41,8 +41,11 @@ curl_close($curl);
 $json = json_decode($response, true);
 ?>
  <div class="input-group mb-3">
+ <button type="button" class="btn btn-default" aria-label="Left Align">
+         <i class="fas fa-users"></i>
+         </button>
  <select class="form-select" aria-label="Default select example">
- <option value="">-----------------</option>
+ <option value="">--------SELECCIONA---------</option>
    <?php
 foreach ($json as &$valor) {
 
