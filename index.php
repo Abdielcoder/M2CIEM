@@ -13,7 +13,7 @@
    </head>
    <body>
       <div class="container">
-      <nav class=navbar navbar-light" style="background-color: #4E8D9F;">
+      <nav class="navbar navbar-light nav-color" >
          <div class="container">
             <a class="navbar-brand" href="#">
             <img src="images/bitlabs_logo.png" alt="" width="50" height="50">
@@ -40,9 +40,10 @@ $response = curl_exec($curl);
 curl_close($curl);
 $json = json_decode($response, true);
 ?>
- <div class="input-group mb-3">
+ <div class="card inputs">
+ <div class="input-group mb-3 select">
  <button type="button" class="btn btn-default" aria-label="Left Align">
-         <i class="fas fa-users"></i>
+         <i class="fas fa-users colorIcono"></i>
          </button>
  <select class="form-select" aria-label="Default select example">
  <option value="">--------SELECCIONA---------</option>
@@ -55,21 +56,12 @@ foreach ($json as &$valor) {
   
 }
 ?>
-     </select>
-   
-      </div>
-      <div class="input-group mb-3">
-         <button type="button" class="btn btn-default" aria-label="Left Align">
-         <i class="fas fa-list"></i>
-         </button>
-         <input type="text" class="form-control" placeholder="Título" aria-label="Título mensaje" aria-describedby="basic-addon1">
-         <div class="input-group mb-3">
-            <button type="button" class="btn btn-default" aria-label="Left Align">
-            <i class="fa fa-marker" aria-hidden="true"></i>
-            </button>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-         </div>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+  
+  
+</div>
+</div>
+
+<script src="js/messages.js"></script>
    </body>
 </html>

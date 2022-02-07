@@ -1,3 +1,36 @@
-body{
+body {
     font-family: 'Open Sans', sans-serif;
+}
+
+.select {
+    margin-top: 20px;
+    padding-top: 2%;
+}
+
+.inputs {
+    background-color: #F1E6C1;
+    padding-right: 3%;
+    padding-left: 2%;
+    margin-top: 3%;
+}
+
+.colorIcono {
+    color: #3F6A8A;
+}
+
+.pen {
+    margin-right: 1px;
+}
+
+.card {
+    margin-top: 2%;
+    width: 100%;
+}
+
+.envio {
+    background-color: #3F6A8A;
+}
+
+.nav-color {
+    background-color: #4D5E72;
 }
